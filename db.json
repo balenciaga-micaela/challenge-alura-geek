@@ -1,0 +1,100 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "titulo": "Funko Pop! Freezer Dragon Ball Z",
+      "descripcion": "$40.000",
+      "imagen": "./css/imagenes/productos/funko-freezer.png"
+    },
+    {
+      "id": "2",
+      "titulo": "Funko Pop! Harry Potter",
+      "descripcion": "$40.000",
+      "imagen": "./css/imagenes/productos/funko-harry.png"
+    },
+    {
+      "id": "3",
+      "titulo": "Funko Pop! Mantis Guardianes de la Galaxia",
+      "descripcion": "$40.000",
+      "imagen": "./css/imagenes/productos/funko-mantis.png"
+    },
+    {
+      "id": "4",
+      "titulo": "Funko Pop! Sonic ",
+      "descripcion": "$40.000",
+      "imagen": "./css/imagenes/productos/funko-sonic.png"
+    },
+    {
+      "id": "5",
+      "titulo": "Lego Batman ",
+      "descripcion": "$90.000",
+      "imagen": "./css/imagenes/productos/lego-batman.png"
+    },
+    {
+      "id": "6",
+      "titulo": "Lego Marvel ",
+      "descripcion": "$440.000",
+      "imagen": "./css/imagenes/productos/lego-marvel.png"
+    },
+    {
+      "id": "7",
+      "titulo": "Lego Minecraft ",
+      "descripcion": "$190.000",
+      "imagen": "./css/imagenes/productos/lego-minecraft.png"
+    },
+    {
+      "id": "8",
+      "titulo": "Lego Spiderman ",
+      "descripcion": "$90.000",
+      "imagen": "./css/imagenes/productos/lego-spiderman.png"
+    },
+    {
+      "id": "9",
+      "titulo": "Remera Joystick ",
+      "descripcion": "$20.000",
+      "imagen": "./css/imagenes/productos/remera-joystick.png"
+    },
+    {
+      "id": "10",
+      "titulo": "Remera Nintendo Retro ",
+      "descripcion": "$20.000",
+      "imagen": "./css/imagenes/productos/remera-nintendo.png"
+    },
+    {
+      "id": "11",
+      "titulo": "Remera Pacman ",
+      "descripcion": "$20.000",
+      "imagen": "./css/imagenes/productos/remera-pacman.png"
+    },
+    {
+      "id": "12",
+      "titulo": "Remera Star Wars ",
+      "descripcion": "$20.000",
+      "imagen": "./css/imagenes/productos/remera-starwars.png"
+    },
+    {
+      "id": "13",
+      "titulo": "Taza Diskette ",
+      "descripcion": "$10.000",
+      "imagen": "./css/imagenes/productos/taza-diskette.png"
+    },
+    {
+      "id": "14",
+      "titulo": "Taza Pacman ",
+      "descripcion": "$10.000",
+      "imagen": "./css/imagenes/productos/taza-pacman.png"
+    },
+    {
+      "id": "15",
+      "titulo": "Taza Programador ",
+      "descripcion": "$10.000",
+      "imagen": "./css/imagenes/productos/taza-programador.png"
+    },
+    {
+      "id": "16",
+      "titulo": "Taza Sega ",
+      "descripcion": "$10.000",
+      "imagen": "./css/imagenes/productos/taza-sega.png"
+    }
+  ]
+}

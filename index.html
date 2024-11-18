@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="encabezado">
+                <a class="logo" href="./index.html">
+                    <img src="css/imagenes/logo.png" alt="logo alura geek" />
+                </a>
+    
+                <div class="encabezado__buscar">
+    
+                    <input type="search" placeholder="Buscar" id="buscar" class="buscar__input" data-busqueda>
+                    <button class="buscar__boton" data-boton-busqueda></button>
+    
+                </div>
+            </nav>
+        </header>
+      
+        <section>
+            <h1 class="titulo">Bienvenidos a Alura Geek, la tienda donde la pasión geek se convierte en colección.</h1>      
+        </section>
+
+        <section class="productos_y_formulario">
+            <div class="productos">
+                <ul class="productos__container" alt="productos alura geek" data-lista>
+                </ul>
+            </div>
+        
+            <form  class="container__formulario" data-formulario>
+                <h2 class="formulario__titulo">Agregá un nuevo producto!</h2>
+            
+                    <div class="formulario__campo">
+                        <input name="titulo" class="campo__escrita" required
+                            placeholder="nombre" id='titulo' data-titulo />
+                    </div>
+                    <div class="formulario__campo">
+                        <input name="precio" class="campo__escrita" required
+                            placeholder="precio" id='descripcion' data-descripcion />
+                     </div> 
+                     <div class="formulario__campo">
+                        <input name="imagen" class="campo__escrita" required
+                            placeholder="imágen" id='imagen' data-imagen />
+                    </div>
+                    <input class="formulario__boton" type="submit" />
+                    <button type="button" class="formulario__boton__borrar" data-borrar form="none">Borrar</button>
+              
+            </form>
+    </section>
+        <footer class="footer">
+            <p>Proyecto Alura Geek - Desarrollado por Micaela Balenciaga para Alura Latam</p>
+        </footer>
+    </main>
+    <script type="module" src="js/conexiones.js"></script>
+    <script type="module" src="js/crearTarjeta.js"></script>
+    <script type="module" src="js/agregarTarjeta.js"></script>
+    <script type="module" src="js/buscarTarjeta.js"></script>
+    <script type="module" src="js/borrarTarjeta.js"></script>
+</body>
+</html>

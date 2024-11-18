@@ -1,0 +1,44 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .productos_y_formulario {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container__formulario {
+        width: 70vw;
+    }
+
+    .tarjetas_item {
+        width: 50vw;
+    }
+
+    .imagen_producto {
+        max-height: 45vh;
+        min-height: 45vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .tarjetas_item {
+        width: 80vw;
+    }
+
+    .imagen_producto {
+        max-height: 35vh;
+        min-height: 35vh;
+    }
+}
+
+
+@media (max-height: 700px) {
+    .tarjetas_item {
+        height: 50vh;
+    }
+
+    .imagen_producto {
+        max-height: 25vh;
+        min-height: 25vh;
+    }
+}

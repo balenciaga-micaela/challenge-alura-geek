@@ -1,0 +1,220 @@
+/* VARIABLES GLOBALES */
+:root {
+    --font-family: "Orbitron", sans-serif;
+    --gradient-background: linear-gradient(rgb(237, 231, 240), rgb(57, 6, 73));
+    --color-oscuro: rgb(77, 30, 121);
+    --color-claro: rgb(220, 208, 231);
+    --color-footer: #f7d7f7;
+    --color-borde: #000;
+    --color-sombra: red;
+    --border-radius: 10px;
+    --transition-duracion: 0.3s;
+    --font-size-chico: 0.8rem;
+    --font-size-mediano: 1.2rem;
+    --font-size-grande: 1.8rem;
+    --padding-general: 15px;
+    --altura-boton: 22px;
+}
+
+/* ESTILOS GLOBALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-image: var(--gradient-background);
+}
+
+/* HEADER */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+}
+
+.logo {
+    margin-top: 2%;
+    padding-left: 5%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.encabezado__buscar {
+    display: flex;
+    margin-top: 2%;
+    padding-right: 5%;
+    height: 40%;
+}
+
+.buscar__input {
+    width: 100%;
+    padding: var(--padding-general);
+    font-size: var(--font-size-mediano);
+    font-family: var(--font-family);
+    border: 1px solid rgb(211, 211, 211);
+    border-right: none;
+}
+
+.buscar__boton {
+    padding: var(--padding-general);
+    cursor: pointer;
+    background-color: #F9F9F9;
+    background-image: url(../css/imagenes/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgb(211, 211, 211);
+    border-left: none;
+}
+
+/* SECCIÓN DE PRODUCTOS Y FORMULARIO */
+.titulo {
+    margin: 2% 0;
+    text-align: center;
+    font-size: var(--font-size-grande);
+    font-family: var(--font-family);
+}
+
+.productos_y_formulario {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+/* PRODUCTOS */
+.productos__container {
+    margin: 0;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.tarjetas_item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    padding: var(--padding-general);
+    width: 20vw;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--border-radius);
+    background-color: #F9F9F9;
+    box-shadow: 0 0 10px var(--color-sombra);
+    transition: transform var(--transition-duracion) ease;
+}
+
+.tarjetas_item:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    width: 25vw;
+}
+
+.imagen_producto {
+    padding: 2%;
+    max-height: 35vh;
+    min-height: 35vh;
+    border: 2px solid var(--color-borde);
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+.tarjeta__info {
+    width: 100%;
+}
+
+.tarjeta__titulo {
+    margin: 0 0 20% 0;
+    font-size: var(--font-size-chico);
+}
+
+.precio {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-left: 5%;
+    font-size: calc(var(--font-size-chico) - 0.1rem);
+    font-weight: bold;
+}
+
+.boton--eliminar {
+    display: flex;
+    width: var(--altura-boton);
+    height: var(--altura-boton);
+    padding: 4%;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 3px;
+    border: 1px solid var(--color-borde);
+    border-radius: 2px;
+    background-image: url(../css/imagenes/tacho.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* FORMULARIO */
+.container__formulario {
+    padding: 0% 5% 5% 5%;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo__escrita {
+    padding: 4%;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+}
+
+.formulario__boton,
+.formulario__boton__borrar {
+    padding: 4%;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.formulario__boton {
+    color: #F9F9F9;
+    background-color: var(--color-oscuro);
+}
+
+.formulario__boton__borrar {
+    color: var(--color-oscuro);
+    background-color: var(--color-claro);
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    background-color: var(--color-footer);
+    text-align: center;
+    font-size: var(--font-size-chico);
+    font-family: var(--font-family);
+    color: var(--color-oscuro);
+    border-top: 1px solid var(--color-borde);
+}
+
+
